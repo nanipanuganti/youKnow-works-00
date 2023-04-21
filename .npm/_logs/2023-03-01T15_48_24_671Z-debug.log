@@ -1,0 +1,49 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--ignore-scripts',
+1 verbose cli   '@types/craco__craco@ts3.6',
+1 verbose cli   '@types/react-router-dom@ts3.6',
+1 verbose cli   '--save-dev',
+1 verbose cli   '--user-agent=typesInstaller/3.6.3'
+1 verbose cli ]
+2 info using npm@6.14.6
+3 info using node@v12.18.3
+4 verbose npm-session 7476f88d5140db03
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/@types%2freact-router-dom 635ms
+8 http fetch GET 200 https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-5.1.8.tgz 1287ms
+9 silly pacote tag manifest for @types/react-router-dom@ts3.6 fetched in 2021ms
+10 http fetch GET 304 https://registry.npmjs.org/@types%2fcraco__craco 2338ms (from cache)
+11 silly registry:manifest no matching version for @types/craco__craco@ts3.6 in the cache. Forcing revalidation.
+12 http fetch GET 200 https://registry.npmjs.org/@types%2fcraco__craco 2611ms
+13 silly fetchPackageMetaData error for @types/craco__craco@ts3.6 No matching version found for @types/craco__craco@ts3.6.
+14 timing stage:rollbackFailedOptional Completed in 1ms
+15 timing stage:runTopLevelLifecycles Completed in 5186ms
+16 verbose type tag
+17 verbose stack @types/craco__craco: No matching version found for @types/craco__craco@ts3.6.
+17 verbose stack     at pickManifest (/usr/local/lib/node_modules/npm/node_modules/npm-pick-manifest/index.js:122:13)
+17 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/pacote/lib/fetchers/registry/manifest.js:43:18
+17 verbose stack     at tryCatcher (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/util.js:16:23)
+17 verbose stack     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:517:31)
+17 verbose stack     at Promise._settlePromise (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:574:18)
+17 verbose stack     at Promise._settlePromise0 (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:619:10)
+17 verbose stack     at Promise._settlePromises (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:699:18)
+17 verbose stack     at _drainQueueStep (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:138:12)
+17 verbose stack     at _drainQueue (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:131:9)
+17 verbose stack     at Async._drainQueues (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:147:5)
+17 verbose stack     at Immediate.Async.drainQueues [as _onImmediate] (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:17:14)
+17 verbose stack     at processImmediate (internal/timers.js:456:21)
+18 verbose cwd /home/theia/.cache/typescript/3.6
+19 verbose Linux 5.15.79.1-microsoft-standard-WSL2
+20 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--ignore-scripts" "@types/craco__craco@ts3.6" "@types/react-router-dom@ts3.6" "--save-dev" "--user-agent=typesInstaller/3.6.3"
+21 verbose node v12.18.3
+22 verbose npm  v6.14.6
+23 error code ETARGET
+24 error notarget No matching version found for @types/craco__craco@ts3.6.
+25 error notarget In most cases you or one of your dependencies are requesting
+25 error notarget a package version that doesn't exist.
+26 verbose exit [ 1, true ]
